@@ -80,6 +80,7 @@ stages:
         deploy:
           steps:
           - download: current
+            # this is where you download the package
             artifact: drop
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
